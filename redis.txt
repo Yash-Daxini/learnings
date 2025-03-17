@@ -1,0 +1,39 @@
+Redis can be used as cache, message broker and database. It is a datastructure server, becase it supports various types of data structures like strings, hashes, lists, sets, sorted sets, bitmaps etc.
+
+Redis stands for remote dictionary server. It is an open source, in-memory data structure store.
+
+Redis commonly used as a caching layer to store frequently accessible data. Whenever data is requested first it checks in redis cache, if it is present in redis then it's cache hit and data arrives from redis. If data is not in redis then it is cache miss and data is fetched from database and stored in redis for future use.
+
+Data in redis has a TTL (Time to limit) after which data is automatically removed from cache.
+
+Redis as a cache: Ideal for fast access to temporary data.
+Redis as a database: Suitable for real-time data processing and storage.
+Redis as a message broker: Ideal for real-time messaging needs.
+
+A single redis server can handle upto 100000 (100K) queries per second (QPS).
+
+Why redis is so fast:
+
+Redis stores its data in memory(RAM), while traditional databases store data on disk.
+Varios levels of cache.
+
+Register 0.3ns
+L1 cache 0.9ns
+L2 cache 2.8ns
+L3 cache 12.9ns
+RAM      120ns    (Redis stores data in RAM)
+SDD      50-150us
+HDD      1-10ms
+
+Redis is a key-value in-memory database, it internally contructs a hash table. So when try to retrive value from its key, it fetches in O(1) time complexity.
+
+Redis uses single threded event loop to handle commands.
+
+In redis,
+No parallel command execution. (Avoids race condition)
+Efficient for CPU-bound tasks. (Avoids context switching overhead)
+Concurrency via non-blocking I/O. (Can serve multiple client request concurrently)
+
+Redis written in c language (low level language), which provides more control over memory.
+
+
