@@ -17,6 +17,8 @@ Why redis is so fast:
 Redis stores its data in memory(RAM), while traditional databases store data on disk.
 Varios levels of cache.
 
+storage  access time
+
 Register 0.3ns
 L1 cache 0.9ns
 L2 cache 2.8ns
@@ -30,10 +32,12 @@ Redis is a key-value in-memory database, it internally contructs a hash table. S
 Redis uses single threded event loop to handle commands.
 
 In redis,
-No parallel command execution. (Avoids race condition)
+No parallel command execution. (Avoids race condition) (It uses single threaded model)
 Efficient for CPU-bound tasks. (Avoids context switching overhead)
 Concurrency via non-blocking I/O. (Can serve multiple client request concurrently)
 
+Non-blocking calls also known as asynchronous operations. So redis server can handle multiple client requests concurrently. Requests like read or write are handle without blocking other operations. This allows redis to handle thousands of concurrent requests.
+
 Redis written in c language (low level language), which provides more control over memory.
 
-
+Redis can be scale horizontally using redis cluster.
