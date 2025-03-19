@@ -1,0 +1,6 @@
+It is an attack where malicious scripts are injected into web pages and executed in browser.
+
+Types of XSS Attacks:
+1. Stored XSS
+2. Reflected XSS
+3. DOM-based XSS
