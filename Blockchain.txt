@@ -1,0 +1,8 @@
+Blockchain: It is a digital notebook that stores information. Each page in the notebook is called a block. Each block is connected to the previous block, forming a chain. This chain of blocks is called a blockchain. Once the page(block) is full it locked and connected previous page(block) and make a chain. This is called a blockchain. 
+
+Once something written in block it can't be erased or changed. This makes blockchain secure and transparent.
+
+Block has following information:
+1. Data
+2. Hash
+3. Previous block's Hash
