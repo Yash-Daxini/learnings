@@ -1,6 +1,6 @@
 When first pressed power button, a program called BIOS (Basic Input Output System) is executed. BIOS is a firmware, which is a software that is embedded in a hardware. BIOS is responsible for initializing the hardware and starting the boot process. 
 
-There is UEFI which is a newer firmware that replaces BIOS. UEFI is more advanced than BIOS. UEFI provides secure & faster boot.
+There is UEFI (Unified Extensible Firmware Interface) which is a newer firmware that replaces BIOS. UEFI is more advanced than BIOS. UEFI provides secure & faster boot.
 
 Next, BIOS or UEFI runs POST (Power-On Self Test). POST checks the hardware to ensure that everything is working properly. If POST fails, the computer will not boot. POST also checks the CMOS (Complementary Metal-Oxide-Semiconductor) settings. CMOS settings are stored in a battery-powered chip. CMOS settings include date, time, and boot order.
 
