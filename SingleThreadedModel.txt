@@ -1,0 +1,15 @@
+Process: It is a simple running program.
+Thread: Inside process there are threads. Which are responsible for executing tasks.
+
+Process has its own memory space and resources.
+
+Thread is a smaller unit inside a process that actually executes the code. Threads share memory within the same process.
+
+In multi-threaded model, multiple threads can run concurrently within a single process. This allows for better resource utilization and improved performance, especially on multi-core processors.
+
+But, in single threaded model only one thread can exceute at a time. This means that if one thread is blocked or waiting for a resource, the entire process is blocked.
+
+Javascript uses single threaded model. It uses call stack and event loop to handle asynchronous operations.
+
+Major challenge in single threaded model is in blocks the main thread.
+Lake of parallelism: Mordern processors have multiple cores. So, they can run multiple threads at the same time. But in single threaded model, only one thread can run at a time. This means that the CPU is not being used to its full potential.
