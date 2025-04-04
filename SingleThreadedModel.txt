@@ -13,3 +13,10 @@ Javascript uses single threaded model. It uses call stack and event loop to hand
 
 Major challenge in single threaded model is in blocks the main thread.
 Lake of parallelism: Mordern processors have multiple cores. So, they can run multiple threads at the same time. But in single threaded model, only one thread can run at a time. This means that the CPU is not being used to its full potential.
+
+In multi thread model each request are processed by separate thread & that ensures slow requests are not blocking the entire process. Althouogh, as traffic increases, the number of threads also increases. This can lead to resource contention and performance degradation because of high memory usage and performance bottle-necks due to excessive context switching.
+
+Node js: Node js runs on a single thread.But uses event driven non-blocking IO model. This allows to handle multiple requests concurrently connections efficiently. It uses event loop and background worker threads to handle multiple requests concurrently.
+At the core of node js there is an event loop.
+
+Event Loop: A mechanism that allows to handle multiple requests simultaneously without blocking the execution.
