@@ -19,4 +19,19 @@ In multi thread model each request are processed by separate thread & that ensur
 Node js: Node js runs on a single thread.But uses event driven non-blocking IO model. This allows to handle multiple requests concurrently connections efficiently. It uses event loop and background worker threads to handle multiple requests concurrently.
 At the core of node js there is an event loop.
 
-Event Loop: A mechanism that allows to handle multiple requests simultaneously without blocking the execution.
+Event Loop: A mechanism that allows to handle multiple requests simultaneously without blocking the execution, unlike traditional blocking system where single task freeze execution. 
+
+Event loop is a smart assistant, it keep checking if new work is available and switches between tasks efficiently.
+
+When node js receives a request that includes IO operation, it doesn't block the event loop. Instead, it delegates the task to Event Demultiplexer. Event demultiplexer it takes multiple requests and serve response once it is ready.
+
+Firstly, event loop passes IO requests to Event Demultiplexer. Event Demultiplexer monitors the IO operations and notifies the event loop when the operation is complete. Once the operation is complete, the event loop picks up the result and continues executing the code.
+
+Who actually executes the IO operation in the background in node js: 
+Libuv: It is c++ library that powers node js, enabling its asynchronus event driven architecture.It handles IO operation efficiently.
+
+When Event demultiplexer receives a IO tasks, it passes it to libuv. Libuv decides how the tasks should be handled. If its a asynchronus operation like network requests it simply waits for a response. If it CPU intensive like file operation or cryptography, lubuv offloads it to a worker thread in its internal thread pool and once a task is complete libuv sends the result back to the event loop. This means even though Node JS is single threaded it actually uses background worker thhreads for heavy tasks. Making it highly efficient for IO driven applications.
+
+By leveraging non-blocking IO and multiplexing it ensures smooth performance without blocking executions however this model isn't ideal for CPU intensive tasks like video proccessing or cryptography where single thread becomes bottleneck.
+
+That's where worker threads comes in and allowing node js to handle CPU intensive tasks efficiently
