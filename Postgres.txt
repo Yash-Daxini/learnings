@@ -1,0 +1,3 @@
+Postgres can also store unstructured data in JSON format. For that it has JSONB data type.
+
+Is supports cron job.
