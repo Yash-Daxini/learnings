@@ -1,0 +1,5 @@
+By default node js works on single thread, it means it executes one task at a time. But it handles IO heavy tasks efficiently using event loop and libuv.
+
+All the tasks are start execution with call stack where execution takes place by one task at a time.
+
+Libuv handles all async tasks in the background. Libuv places the IO task to task queue.

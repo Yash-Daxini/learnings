@@ -34,4 +34,4 @@ When Event demultiplexer receives a IO tasks, it passes it to libuv. Libuv decid
 
 By leveraging non-blocking IO and multiplexing it ensures smooth performance without blocking executions however this model isn't ideal for CPU intensive tasks like video proccessing or cryptography where single thread becomes bottleneck.
 
-That's where worker threads comes in and allowing node js to handle CPU intensive tasks efficiently
+That's where worker threads comes in and allowing node js to handle CPU intensive tasks efficientlyi.
