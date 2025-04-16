@@ -1,0 +1,5 @@
+Why IO operations are slow ?
+
+Accessing RAM takes just nano seconds. But when dealing with disk or network operations, it takes milliseconds. So, IO operations are slow compared to CPU operations.
+
+RAM can transfer data at GB/s, where as disk can transfer data at MB/s.
