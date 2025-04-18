@@ -14,3 +14,5 @@ Every thread needs memory and CPU resources. And when thread hits the IO operati
 So, when multiple threads are created then lot of resources and memory are consumed. It may result in Out of memory, race condition, deadlocks or live locks. Also CPU needs to switch between those threads.
 
 As a result more threads looks good but actually it slows down the performance more.
+
+This IO heavy operation can be handled more efficiently via Event Demultiplexer.
