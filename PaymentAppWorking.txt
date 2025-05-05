@@ -1,0 +1,1 @@
+Apple Pay: One of the secure model. In apple pay model when first card added during setup, apple must authenticate card directly with issuing bank or card network like VISA or master card. Apple follows "on device tokenization model"
