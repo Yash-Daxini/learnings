@@ -3,3 +3,5 @@ Apple Pay: One of the secure model. In apple pay model when first card added dur
 After validation process bank or card network issues a device account number or DAN, which apple securely store on device. This DAN is used for all future transactions instead of original card number. Only DAN (tokenize) version is used for transactions. Apple pay design to work even without internet Ex: Tap to pay offline, so device must have everything locally.
 
 Only once real card goes to the bank at setup, after that payments happens through secure proxy DAN. So even server of e-commerce site or bank the only thing they see is DAN. So even if someone hacks the server, they will not get real card number. They get only DAN which useless without original device.
+
+NFC: Near field communication. It is a short range wireless technology that allows two devices to communicate when they are within a few centimeters of each other. NFC is commonly used for contactless payments, where a user can tap their smartphone or smart card on a payment terminal to complete a transaction. NFC operates at 13.56 MHz and can transfer data at speeds of up to 424 kbit/s.
