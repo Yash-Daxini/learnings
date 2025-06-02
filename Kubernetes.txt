@@ -1,0 +1,1 @@
+Server: Physical machine which is on 24/7. It has public internet access and static IP address. Using public internet and static IP external user can access the server.
