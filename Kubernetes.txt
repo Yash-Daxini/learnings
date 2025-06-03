@@ -1,1 +1,9 @@
 Server: Physical machine which is on 24/7. It has public internet access and static IP address. Using public internet and static IP external user can access the server.
+
+Virtulization: The server is running a hypervisor that allows for the creation and management of virtual machines (VMs). Each VM can run its own operating system and applications, providing isolation and resource allocation. But virtulization images are very heavy because it contains whole operating system.
+
+Containerization: It is kind of virtuliztion but it not contains OS layer. Containerization uses host system's kernel. The server supports containerization technologies, allowing applications to be packaged into containers. This enables lightweight deployment, scaling, and management of applications across different environments.
+
+Management of containers are not easy. Container maintainance means updating the container image, redeploying the container, and ensuring that the application runs smoothly. This can be complex, especially in large-scale environments with many containers.
+
+Container Orchestration: To simplify the management of containers, container orchestration tools are used. These tools automate the deployment, scaling, and operation of application containers across clusters of hosts. They help manage the lifecycle of containers, ensuring that applications are running as expected and can scale based on demand.
