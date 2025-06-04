@@ -7,3 +7,11 @@ Containerization: It is kind of virtuliztion but it not contains OS layer. Conta
 Management of containers are not easy. Container maintainance means updating the container image, redeploying the container, and ensuring that the application runs smoothly. This can be complex, especially in large-scale environments with many containers.
 
 Container Orchestration: To simplify the management of containers, container orchestration tools are used. These tools automate the deployment, scaling, and operation of application containers across clusters of hosts. They help manage the lifecycle of containers, ensuring that applications are running as expected and can scale based on demand.
+
+Container orchestration tools provide framework for managing containers and microservices architecture at scale, making it easier to deploy the same application across different environments without redesigning it.
+
+Google's Borg system is a cluster manager that runs hundreds of thousands of jobs, from many thousands of different applications, across a number of clusters each with up to tens of thousands of machines.
+
+Kubernates: It is developed by Google and it's donated to CNCF (Cloud Native Computing Foundation). Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It provides a robust framework for running applications in a distributed environment, ensuring high availability and scalability.
+
+It's also know as K8s.
