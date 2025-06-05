@@ -15,3 +15,28 @@ Google's Borg system is a cluster manager that runs hundreds of thousands of job
 Kubernates: It is developed by Google and it's donated to CNCF (Cloud Native Computing Foundation). Kubernetes is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. It provides a robust framework for running applications in a distributed environment, ensuring high availability and scalability.
 
 It's also know as K8s.
+
+AWS ECS - Elastic container service. It is also maintains the containers but it becomes platform dependent. It is possilble that other cloud services might not provide this functionality.
+
+Kubernetes is a cloud agnostic.
+
+Kubernetes cluster: It is a set of node machines that run containerized applications.
+
+Architecture of Kubernetes:- 
+
+Terms use in kubernetes'c cluster architecture: 
+
+1. Control Plane
+2. Scheduler
+3. Controller
+4. etcd - KV store
+5. Kube-API server
+
+6. Worker Node
+7. Kubelet
+8. Kube proxy
+9. CRI (Container runtime interface)
+
+10. PODS
+
+11. CCM (Cloud control manager)
