@@ -36,9 +36,12 @@ Terms use in kubernetes'c cluster architecture:
   5. CCM (Cloud control manager): Manages cloud-specific control logic, such as managing load balancers and storage volumes in a cloud environment. Integrates with underlying cloud providers.
 
 6. Worker Node
-7. Kubelet
-8. Kube proxy
-9. CRI (Container runtime interface)
+7. Kubelet: It ensures that PODS are runnig on the worker node. It communicates with the kube-API server to receive instructions and report the status of the pods running on the node.
+8. Kube proxy: It is a network proxy that runs on each worker node. It maintains network rules for pod communication and load balancing, ensuring that traffic is properly routed to the appropriate pods based on their labels and selectors.
+9. CRI (Container runtime interface): It is responsible for running containers.
+   - Containerd: A container runtime that provides the basic functionalities required to run containers.
+   - Docker: A popular container runtime that allows for building, running, and managing containers.
+   - CRI-O: An alternative container runtime designed specifically for Kubernetes.
 
 10. PODS
 
