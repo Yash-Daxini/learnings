@@ -43,6 +43,8 @@ Terms use in kubernetes'c cluster architecture:
    - Docker: A popular container runtime that allows for building, running, and managing containers.
    - CRI-O: An alternative container runtime designed specifically for Kubernetes.
 
-10. PODS
+10. PODS: Pods represents a set of running containers in your cluster. A pod can contain one or more containers that share the same network namespace and storage volumes. Pods are the smallest deployable units in Kubernetes and are used to run applications.
 
 11. CCM (Cloud control manager)
+
+12. Node: Node is a worker machine in Kubernetes, which can be a physical or virtual machine. Each node runs the necessary services to manage pods and provide the runtime environment for containers. Nodes are managed by the control plane and can be dynamically added or removed from the cluster.
