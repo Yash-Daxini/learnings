@@ -1,0 +1,7 @@
+Google: It uses single monolothic repository for all its code.Google built and uses its own version contoller system, Piper. Citc: Clients in the cloud.
+
+Google uses one giant mono repository for all its code, which is managed by its own version control system called Piper. And all commits to the same branch the trunk.
+
+Google strongly practices trunk-based development.
+
+Critique: Google's internal code review tool.
