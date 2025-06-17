@@ -5,3 +5,5 @@ Google uses one giant mono repository for all its code, which is managed by its 
 Google strongly practices trunk-based development.
 
 Critique: Google's internal code review tool.
+
+Meta: They started with git. After that they switched to mercurial.
