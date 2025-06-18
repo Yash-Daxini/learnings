@@ -1,0 +1,3 @@
+Localhost: It refers the computer that currently working on. Localhost is a loop back address.
+
+Loopback address: It is a special IP address used to test network software and hardware on the local machine. It is a reserved IP address range that start from 127.0.0.0 and ends at 127.255.255.255, with 127.0.0.1 being the most commonly used loopback address, often referred to as "localhost".
