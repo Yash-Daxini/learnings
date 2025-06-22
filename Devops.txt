@@ -12,3 +12,11 @@ Need of IPV6 address: There are very limited addresses available in IPV4, so IPV
           y -> 0 to 255
           z -> 0 to 255
 2. IPV6
+
+Mild hosting: If you host applications on intranet, where application is access by limit users thhat are available in that private network and application is not exposed in public network or on internet, then its called mild hosting. Application can be access by private network of the machine where application is hosted.
+
+Hosts file: It is a file that maps hostnames to IP addresses. It is used by the operating system to resolve hostnames to IP addresses before querying DNS servers. The hosts file is typically located in the /etc/hosts directory on Unix-like systems and in C:\Windows\System32\drivers\etc\hosts on Windows systems. 
+
+
+
+
