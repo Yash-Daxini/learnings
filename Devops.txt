@@ -17,6 +17,14 @@ Mild hosting: If you host applications on intranet, where application is access 
 
 Hosts file: It is a file that maps hostnames to IP addresses. It is used by the operating system to resolve hostnames to IP addresses before querying DNS servers. The hosts file is typically located in the /etc/hosts directory on Unix-like systems and in C:\Windows\System32\drivers\etc\hosts on Windows systems. 
 
+How to deploy apps: 
 
+1. Renting servers on cloud 
+2. Renting compute yourself in data centers
+3. Self hosting (buying a CPU rack in your house)
+4. Serverless providers (like AWS Lambda, Azure Functions, etc.)
+5. Cloud native options (k8s, ECS, etc.)
+
+STUN Protocoal: 
 
 
