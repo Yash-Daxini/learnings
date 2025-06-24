@@ -1,0 +1,9 @@
+Use of CF Tunnel: 
+
+CF Tunnel is a tool used to create secure tunnels for network traffic, allowing users to access services and resources over the internet securely. It is commonly used in scenarios where direct access to a server or service is restricted or requires encryption.
+
+We can't access the locally hosted application from the internet directly. To access it, we need to create a tunnel that allows external access to the local application. CF Tunnel provides a way to create such tunnels, enabling secure access to local applications from remote locations.
+
+How CF Tunnel works:
+
+Cloudflared tunnel establishes outbound connections (tunnels) between the local machine and Cloudflare's network. This allows users to expose their local applications to the internet securely without needing to open ports on their router or firewall.
