@@ -25,6 +25,10 @@ How to deploy apps:
 4. Serverless providers (like AWS Lambda, Azure Functions, etc.)
 5. Cloud native options (k8s, ECS, etc.)
 
-STUN Protocoal: 
+NAT:
+
+STUN Protocoal:
+
+
 
 
