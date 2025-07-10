@@ -1,3 +1,0 @@
-SCIM: System for cross-domain identity management
-
-It is a standard that helps sync user data across cloud service.
